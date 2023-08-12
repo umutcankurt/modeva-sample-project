@@ -1,1 +1,0 @@
-# modeva-sample-project
