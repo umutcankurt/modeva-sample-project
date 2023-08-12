@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "saas": "^1.0.0",
     "sass": "^1.65.1"
   }
 }
