@@ -26,19 +26,19 @@ body {
 
 .headerconteiner {
     display: flex;
-    position: absolute;
+    // position: absolute;
     display: flex;
     width: 100%;
     height: 1024px;
     justify-content: space-around;
 
     &_first-product {
-        display: inline-flex;
+        display: flex;
         flex-direction: row;
-        position: absolute;
+        // position: absolute;
         background-color: #FFF;
         gap: 16px;
-        margin: 500px 0px 0px 950px;
+        // margin: 500px 0px 0px 950px;
 
     }
     
@@ -66,15 +66,15 @@ body {
     }
 }
 
-.banner {
+// .banner {
 
-    display: flex;
-    width: 100%;
-    height: 1024px;
-    flex-shrink: 0;
-    background: url(/assets/img/banner.jpg) center center/cover no-repeat;
+//     // display: flex;
+//     // width: 100%;
+//     // height: 1024px;
+//     // flex-shrink: 0;
+    
 
-}
+// }
 
 
 
@@ -83,8 +83,10 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 1345px;
-    position:absolute;
+    // position:absolute;
     margin-top: 30px;
+    background: url(/assets/img/banner.jpg) center center/cover no-repeat;
+    flex-direction: column;
     
 
     &_logo_text {
