@@ -1,0 +1,585 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo_link {
+  text-decoration: none;
+}
+
+.headerconteiner {
+  display: flex;
+  width: 100%;
+  height: 1024px;
+  justify-content: center;
+  background: url(/assets/img/banner.jpg) center center/cover no-repeat;
+}
+.headerconteiner_products {
+  display: flex;
+  width: 1345px;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+.headerconteiner_first-product {
+  display: flex;
+  background-color: #FFF;
+  gap: 16px;
+  align-items: center;
+  flex-direction: row;
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  bottom: 270px;
+}
+.headerconteiner_first-product_info {
+  color: #3E3E3E;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+.headerconteiner_second-product {
+  display: flex;
+  background-color: #FFF;
+  gap: 16px;
+  align-items: center;
+  flex-direction: row;
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  bottom: 47px;
+}
+.headerconteiner_second-product_info {
+  padding-left: 18px;
+  color: #3E3E3E;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+.headerconteiner_first_product_image {
+  align-items: center;
+  display: flex;
+}
+.headerconteiner_second_product_image {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.headerconteiner_product_name {
+  margin: 0px;
+}
+.headerconteiner_product-price {
+  color: #757575;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.headerconteiner_product-shop-button {
+  color: #3E3E3E;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-decoration-line: underline;
+}
+
+.topbar {
+  display: flex;
+  background-color: #8B4513;
+  height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.topbar_content {
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.header_menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1345px;
+}
+.header_logo_text {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.header_logo_text:first-letter {
+  color: #8B4513;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+.header_menu_items {
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  align-items: center;
+}
+
+.menu_dropdown::after {
+  content: url(assets/svg/menu-down-icon.svg);
+}
+
+.header_user-elements {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header_user-elements_input {
+  display: flex;
+  width: 214px;
+  height: auto;
+  padding: 20px 0px 20px 40px;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: #FAFAFA;
+  background-image: url(assets/svg/search-icon.svg);
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  border: 0px;
+}
+.header_user-elements_input::placeholder {
+  color: #B6B6B6;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainpage_content {
+  width: 1440px;
+  padding: 64px 42px 0px 42px;
+  margin-bottom: 100px;
+}
+.mainpage_content_types {
+  display: flex;
+  flex-direction: row;
+  width: 1356px;
+}
+.mainpage_content_types_formal {
+  display: flex;
+  flex-direction: column;
+}
+.mainpage_content_types_formal_links {
+  text-decoration: none;
+}
+.mainpage_content_types_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  color: #FFF;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-transform: uppercase;
+}
+.mainpage_content_types_formal-main-section {
+  display: flex;
+  align-items: center;
+  width: 666px;
+  height: 374px;
+  background: linear-gradient(0deg, rgba(139, 69, 19, 0.2) 0%, rgba(139, 69, 19, 0.2) 100%), url(assets/img/formal-woman.jpeg), lightgray 50%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 32px;
+}
+.mainpage_content_types_formal-men {
+  display: flex;
+  align-items: center;
+  width: 666px;
+  height: 374px;
+  background: linear-gradient(0deg, rgba(139, 69, 19, 0.23) 0%, rgba(139, 69, 19, 0.23) 100%), url(assets/img/formal-men.jpg), lightgray 50%;
+  background-position: center;
+  background-size: cover;
+}
+.mainpage_content_types_casual-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 658px;
+  height: 780px;
+  margin-left: 32px;
+  background: linear-gradient(0deg, rgba(139, 69, 19, 0.2) 0%, rgba(139, 69, 19, 0.2) 100%), url(assets/img/casual-style.jpg), lightgray 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-section-dress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.main-section-dress_title {
+  color: #3E3E3E;
+  font-family: "Playfair Display", serif;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 98.8px;
+  text-transform: uppercase;
+  align-self: stretch;
+}
+.main-section-dress_products {
+  display: flex;
+  width: 1356px;
+  justify-content: space-between;
+}
+.main-section-dress-product {
+  width: 315px;
+  height: 525px;
+  position: relative;
+}
+.main-section-dress-product_image {
+  width: 315px;
+  height: 420px;
+}
+.main-section-dress-product_stars {
+  display: flex;
+  flex-direction: row;
+  width: 68px;
+  height: 27px;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: #8B4513;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+.main-section-dress-product_stars_icon {
+  flex-direction: row;
+  display: flex;
+}
+.main-section-dress-product_stars_rating {
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-section-dress-product_links {
+  text-decoration: none;
+}
+.main-section-dress-product_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.main-section-dress-product_category {
+  color: #757575;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.main-section-dress-product_name {
+  color: #3E3E3E;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: capitalize;
+  align-self: stretch;
+  margin: 0px;
+}
+.main-section-dress-product_price {
+  color: #757575;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+  margin: 0px;
+}
+
+.more-butn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 215px;
+  height: 77px;
+  background-color: #8B4513;
+  padding: 24px;
+  align-items: center;
+  gap: 8px;
+}
+
+.more-btn-text {
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.more-btn-text::after {
+  content: url(assets/svg/arrow-small-right.svg);
+  vertical-align: middle;
+}
+
+.services {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 64px;
+}
+.services_icon {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: #8B4513;
+}
+.services_satisfaction-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 336, 5px;
+  height: 392px;
+  background-color: #F2F2F2;
+  padding: 24px;
+}
+.services_satisfaction-payment_content {
+  background-color: #FFF;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  height: 344px;
+}
+.services_title {
+  color: #3E3E3E;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  align-self: stretch;
+  line-height: 36px;
+  margin: 0;
+}
+.services_description {
+  color: #757575;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+  align-self: center;
+}
+.services_online-delivery {
+  display: flex;
+  width: 619px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.services_online-delivery_container {
+  display: flex;
+  padding: 24px;
+  width: 619px;
+  height: 180px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  background: #F2F2F2;
+}
+.services_online-delivery_container_feature {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  padding: 24px;
+  align-items: center;
+  height: 132px;
+}
+.services_online-delivery_container_content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  align-items: center;
+}
+.services_online-delivery_container_content_box {
+  display: flex;
+  flex-direction: column;
+}
+.services_online-delivery_container_content_box_title {
+  color: #3E3E3E;
+  text-align: start;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  align-self: stretch;
+  line-height: 36px;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #8B4513;
+  height: 373px;
+  width: 100%;
+  align-items: center;
+  margin: 100px 0px 0px 0px;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.footer_conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1356px;
+  gap: 36px;
+  color: #FFF;
+}
+.footer_logo {
+  color: #FFF;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-transform: uppercase;
+}
+.footer_contact {
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+.footer_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+}
+.footer_menu_col {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 8px;
+}
+.footer_menu_col_title {
+  text-decoration: none;
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18.9px;
+  margin-bottom: 10px;
+}
+.footer_items {
+  text-decoration: none;
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+.footer_copyright {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+.footer_copyright_text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16.2px;
+  margin: 0px;
+}
