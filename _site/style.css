@@ -173,6 +173,9 @@ body {
   text-decoration: none;
   align-items: center;
 }
+.header_mobile_menu {
+  display: none;
+}
 
 .menu_dropdown::after {
   content: url(assets/svg/menu-down-icon.svg);
@@ -417,7 +420,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  width: 336, 5px;
+  width: 336.5px;
   height: 392px;
   background-color: #F2F2F2;
   padding: 24px;
@@ -582,4 +585,93 @@ body {
   font-weight: 300;
   line-height: 16.2px;
   margin: 0px;
+}
+
+@media screen and (max-width: 380px) {
+  .header_logo {
+    width: 202px;
+  }
+  .header_menu_items {
+    display: none;
+  }
+  .header_mobile_menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .header_mobile_menu::after {
+    content: url(assets/svg/menu-down-icon.svg);
+  }
+  .header_user-elements {
+    display: none;
+  }
+  .headerconteiner_products {
+    display: none;
+  }
+  .mainpage_content {
+    width: 360px;
+    padding: 20px 5px 20px 5px;
+  }
+  .mainpage_content_types {
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+  }
+  .mainpage_content_types_casual-style {
+    flex-direction: column;
+  }
+  .main-section-dress_title {
+    width: 363px;
+    font-size: 38px;
+    line-height: 49.4px;
+    margin-left: 0;
+  }
+  .main-section-dress_products {
+    width: 360px;
+    overflow: hidden;
+    gap: 32px;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services_satisfaction-payment {
+    width: 360px;
+  }
+  .services_online-delivery_container {
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 392px;
+  }
+  .services_online-delivery_container_content {
+    flex-direction: column;
+  }
+  .services_online-delivery_container_content_box_title {
+    text-align: center;
+  }
+  .services_online-delivery_container_feature {
+    display: flex;
+    flex-direction: column;
+    height: 344px;
+    align-items: center;
+  }
+  .footer {
+    height: fit-content;
+    margin: 0px;
+  }
+  .footer_conteiner {
+    width: 380px;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .footer_menu {
+    flex-direction: column;
+    padding: 0px 26px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .footer_logocontact {
+    margin: 30px;
+    margin-bottom: 46px;
+  }
 }
