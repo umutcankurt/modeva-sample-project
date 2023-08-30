@@ -181,6 +181,31 @@ body {
   text-decoration: none;
   align-items: center;
 }
+.header_scrool {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+}
+.header_scrool-text {
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  align-items: stretch;
+}
+.header_scrool-text::after {
+  content: url(assets/svg/double-down.svg);
+}
 .header_mobile_menu {
   display: none;
 }
@@ -704,5 +729,8 @@ body {
   .footer_logocontact {
     margin: 30px;
     margin-bottom: 46px;
+  }
+  .services_online-delivery {
+    width: 380px;
   }
 }
