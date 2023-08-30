@@ -9,6 +9,19 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addTemplateFormats("scss");
 
+  eleventyConfig.setServerOptions({
+    module: "@11ty/eleventy-server-browsersync",
+
+    // Default Browsersync options shown:
+    port: 8080,
+    open: false,
+    notify: false,
+    ui: false,
+    ghostMode: false,
+
+    // Opt-out of the Browsersync snippet
+    // snippet: false,
+  })
   // Creates the extension for use
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css", // optional, default: "html"

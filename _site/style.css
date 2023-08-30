@@ -114,6 +114,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  position: relative;
+}
+.topbar_closeicon {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 20px;
+  padding: 5px;
 }
 .topbar_content {
   color: white;
@@ -587,12 +595,18 @@ body {
   margin: 0px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .header_logo {
     width: 202px;
   }
   .header_menu_items {
     display: none;
+  }
+  .header_menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 380px;
   }
   .header_mobile_menu {
     display: flex;
@@ -616,8 +630,25 @@ body {
     align-items: center;
     width: 360px;
   }
+  .mainpage_content_types_formal-main-section {
+    width: 360px;
+    height: 374px;
+  }
+  .mainpage_content_types_formal-men {
+    width: 360px;
+    height: 374px;
+    margin-bottom: 32px;
+  }
   .mainpage_content_types_casual-style {
     flex-direction: column;
+    width: 360px;
+    height: 374px;
+    align-items: flex-start;
+    margin-left: 0px;
+  }
+  .mainpage_content_types_title {
+    font-size: 28px;
+    line-height: 300px;
   }
   .main-section-dress_title {
     width: 363px;

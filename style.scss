@@ -15,7 +15,6 @@ $contentfont: 'Lato', sans-serif;
 
 body {
     margin: 0;
-
 }
 
 
@@ -142,6 +141,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    position: relative;
+
+    &_closeicon{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 20px;
+        padding: 5px;
+    }
 
 
     &_content {
@@ -717,13 +725,21 @@ body {
 }
 
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:420px) {
 
     .header_logo{
         width: 202px;
     }
     .header_menu_items {
         display: none;
+    }
+
+    .header_menubar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 380px;
+
     }
 
     .header_mobile_menu {
@@ -756,8 +772,29 @@ body {
             align-items: center;
             width: 360px;
 
+            &_formal-main-section {
+                width: 360px;
+                height: 374px;
+            }
+
+            &_formal-men {
+                width: 360px;
+                height: 374px;
+                margin-bottom: 32px;
+            }
+
             &_casual-style{
             flex-direction: column;
+            width: 360px;
+            height: 374px;
+            align-items: flex-start;
+            margin-left: 0px;
+            }
+
+            &_title {
+            font-size: 28px;
+            line-height: 300px;
+           
             }
         }
 
@@ -776,6 +813,7 @@ body {
         width: 360px; 
             overflow: hidden;
             gap: 32px;
+            
         }
     }
 
